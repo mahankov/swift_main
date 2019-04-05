@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class LoginViewController: UIViewController {
     
     @IBOutlet weak var scrollView: UIScrollView!
     @IBOutlet weak var username: UITextField!
@@ -67,15 +67,40 @@ class ViewController: UIViewController {
         self.scrollView?.endEditing(true)
     }
     
-    @IBAction func loginButton(_ sender: Any) {
+
+    override func shouldPerformSegue(withIdentifier identifier: String, sender: Any?) -> Bool {
+        // Проверяем данные
+        let checkResult = checkUserData()
+        
+        // Если данные неверны, покажем ошибку
+        if !checkResult {
+            showLoginError()
+        }
+        
+        // Вернем результат
+        return checkResult
+    }
+    
+    private func checkUserData() -> Bool {
         let login = username.text!
         let password = userpassword.text!
         
         if login == "" && password == "" {
-            print("успешная авторизация")
+            return true
         } else {
-            print("неуспешная авторизация")
+            return false
         }
+    }
+    
+    private func showLoginError() {
+        // Создаем контроллер
+        let alter = UIAlertController(title: "Authorization failed", message: "Your username or password is incorrect", preferredStyle: .alert)
+        // Создаем кнопку для UIAlertController
+        let action = UIAlertAction(title: "Ok", style: .cancel, handler: nil)
+        // Добавляем кнопку на UIAlertController
+        alter.addAction(action)
+        // Показываем UIAlertController
+        present(alter, animated: true, completion: nil)
     }
     
 }

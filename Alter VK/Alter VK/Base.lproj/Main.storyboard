@@ -10,10 +10,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Login View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="LoginViewController" customModule="Alter_VK" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -73,7 +73,7 @@
                                             <color key="titleColor" red="0.27450980392156865" green="0.50196078431372548" blue="0.76078431372549016" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </state>
                                         <connections>
-                                            <action selector="loginButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="9Li-QC-4ma"/>
+                                            <segue destination="y1s-rU-e3T" kind="show" id="9uu-4x-kVC"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -119,7 +119,6 @@
                         <outlet property="scrollView" destination="U0G-mu-dOG" id="Q1H-CV-Rm5"/>
                         <outlet property="username" destination="p0i-j9-1Pj" id="rGD-je-Zfo"/>
                         <outlet property="userpassword" destination="gTZ-Ps-TZb" id="roI-2r-RkQ"/>
-                        <segue destination="y1s-rU-e3T" kind="show" id="hPE-qm-yCX"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -129,6 +128,7 @@
         <!--Tab Bar Controller-->
         <scene sceneID="4WJ-9u-GjU">
             <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="zut-UB-gur" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <tabBarController id="y1s-rU-e3T" sceneMemberID="viewController">
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="F4H-eO-ie9">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
@@ -140,13 +140,13 @@
                         <segue destination="ov3-Cx-Gdo" kind="relationship" relationship="viewControllers" id="Qsh-2P-cHg"/>
                     </connections>
                 </tabBarController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="zut-UB-gur" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="839" y="-381"/>
         </scene>
         <!--Friends List Table View Controller-->
         <scene sceneID="GLd-W7-XfK">
             <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="MVa-Zo-aJu" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <tableViewController id="SNs-C8-RVf" customClass="FriendsListTableViewController" customModule="Alter_VK" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="Ll7-sz-oGA">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
@@ -172,13 +172,13 @@
                     </tableView>
                     <navigationItem key="navigationItem" id="czI-pP-fKa"/>
                 </tableViewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="MVa-Zo-aJu" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2665.217391304348" y="-747.32142857142856"/>
         </scene>
         <!--Friend Collection View Controller-->
         <scene sceneID="Llj-fx-uA2">
             <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="p6u-bo-GlF" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <collectionViewController id="gff-HO-ndh" customClass="FriendCollectionViewController" customModule="Alter_VK" customModuleProvider="target" sceneMemberID="viewController">
                     <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="0aV-Ka-aF8">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
@@ -206,13 +206,13 @@
                         </connections>
                     </collectionView>
                 </collectionViewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="p6u-bo-GlF" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="3577" y="-747"/>
         </scene>
         <!--Groups List Table View Controller-->
         <scene sceneID="PJ8-5a-S0B">
             <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="GFf-zU-uLN" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <tableViewController id="l1J-l3-q99" customClass="GroupsListTableViewController" customModule="Alter_VK" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="PUg-oi-G8C">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
@@ -235,15 +235,15 @@
                     </tableView>
                     <navigationItem key="navigationItem" id="yNQ-f1-RKf"/>
                 </tableViewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="GFf-zU-uLN" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2663.768115942029" y="-78.348214285714278"/>
         </scene>
-        <!--Item-->
+        <!--Friends-->
         <scene sceneID="EMq-S0-w17">
             <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="lrS-Rj-Mue" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="cVs-xZ-IYS" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="Exy-8U-A8M"/>
+                    <tabBarItem key="tabBarItem" title="Friends" image="friends" selectedImage="friends" id="Exy-8U-A8M"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="YOU-Ue-lMn">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
@@ -254,15 +254,15 @@
                         <segue destination="SNs-C8-RVf" kind="relationship" relationship="rootViewController" id="g4J-fh-7K7"/>
                     </connections>
                 </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="lrS-Rj-Mue" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1755.072463768116" y="-747.32142857142856"/>
         </scene>
-        <!--Item-->
+        <!--Groups-->
         <scene sceneID="i8C-yG-JtE">
             <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="o68-wM-fzr" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="ov3-Cx-Gdo" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="f5X-xc-Aj7"/>
+                    <tabBarItem key="tabBarItem" title="Groups" image="groups" selectedImage="groups" id="f5X-xc-Aj7"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="t1u-hc-oja">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
@@ -273,7 +273,6 @@
                         <segue destination="l1J-l3-q99" kind="relationship" relationship="rootViewController" id="28Y-en-twk"/>
                     </connections>
                 </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="o68-wM-fzr" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1753.6231884057972" y="-78.348214285714278"/>
         </scene>
@@ -281,5 +280,7 @@
     <resources>
         <image name="VK_Blue_Logo" width="393" height="234"/>
         <image name="bg" width="1242" height="2208"/>
+        <image name="friends" width="12" height="13"/>
+        <image name="groups" width="16" height="11"/>
     </resources>
 </document>
