@@ -1,5 +1,5 @@
 //
-//  GroupsListTableViewController.swift
+//  GroupTableViewController.swift
 //  Alter VK
 //
 //  Created by Anton Makhankov on 05/04/2019.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class GroupsListTableViewController: UITableViewController {
+class AllGroupsListTableViewController: UITableViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -22,25 +22,20 @@ class GroupsListTableViewController: UITableViewController {
 
     // MARK: - Table view data source
 
-    override func numberOfSections(in tableView: UITableView) -> Int {
-        // #warning Incomplete implementation, return the number of sections
-        return 0
-    }
-
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return 0
+        return 10
     }
-
-    /*
+    
+    
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "reuseIdentifier", for: indexPath)
-
-        // Configure the cell...
-
+        guard let cell = tableView.dequeueReusableCell(withIdentifier: GroupsTableViewCell.reuseId, for: indexPath) as? GroupsTableViewCell else { fatalError("Cell can not be dequeued") }
+        
+        cell.groupName.text = "My all groups name"
+        cell.groupPicCircle.image = UIImage.init(named: "group2")
+        
         return cell
     }
-    */
 
     /*
     // Override to support conditional editing of the table view.

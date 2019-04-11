@@ -1,5 +1,5 @@
 //
-//  FriendsListTableViewController.swift
+//  GroupsListTableViewController.swift
 //  Alter VK
 //
 //  Created by Anton Makhankov on 05/04/2019.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class FriendsListTableViewController: UITableViewController {
+class CurGroupsListTableViewController: UITableViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -26,17 +26,17 @@ class FriendsListTableViewController: UITableViewController {
         // #warning Incomplete implementation, return the number of rows
         return 10
     }
-    
+
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        guard let cell = tableView.dequeueReusableCell(withIdentifier: FriendsTableViewCell.reuseId, for: indexPath) as? FriendsTableViewCell else { fatalError("Cell can not be dequeued") }
-        
-        cell.friendName.text = "My friend name"
-        cell.friendPicCircle.image = UIImage.init(named: "user1")
-        
+        guard let cell = tableView.dequeueReusableCell(withIdentifier: GroupsTableViewCell.reuseId, for: indexPath) as? GroupsTableViewCell else { fatalError("Cell can not be dequeued") }
+
+        cell.groupName.text = "My group name"
+        cell.groupPicCircle.image = UIImage.init(named: "group1")
+
         return cell
     }
-
+    
     /*
     // Override to support conditional editing of the table view.
     override func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
