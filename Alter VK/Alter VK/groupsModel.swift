@@ -7,3 +7,8 @@
 //
 
 import Foundation
+
+struct Group {
+    let groupName: String
+    let groupPicCircle: String
+}

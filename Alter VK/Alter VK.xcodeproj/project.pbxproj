@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		8E12EE0E225F580E00654BC7 /* FriendsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E12EE0D225F580E00654BC7 /* FriendsTableViewCell.swift */; };
 		8E12EE10225F585C00654BC7 /* GroupsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E12EE0F225F585C00654BC7 /* GroupsTableViewCell.swift */; };
+		8E12EE13225F748100654BC7 /* FriendCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E12EE12225F748100654BC7 /* FriendCollectionViewCell.swift */; };
 		8E84DD88225F43E400FBED66 /* friendsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E84DD87225F43E400FBED66 /* friendsModel.swift */; };
 		8E84DD8A225F43FD00FBED66 /* groupsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E84DD89225F43FD00FBED66 /* groupsModel.swift */; };
 		8EA78D372257532000E22DFC /* FriendCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EA78D362257532000E22DFC /* FriendCollectionViewController.swift */; };
@@ -25,6 +26,7 @@
 /* Begin PBXFileReference section */
 		8E12EE0D225F580E00654BC7 /* FriendsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendsTableViewCell.swift; sourceTree = "<group>"; };
 		8E12EE0F225F585C00654BC7 /* GroupsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupsTableViewCell.swift; sourceTree = "<group>"; };
+		8E12EE12225F748100654BC7 /* FriendCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendCollectionViewCell.swift; sourceTree = "<group>"; };
 		8E84DD87225F43E400FBED66 /* friendsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = friendsModel.swift; sourceTree = "<group>"; };
 		8E84DD89225F43FD00FBED66 /* groupsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = groupsModel.swift; sourceTree = "<group>"; };
 		8EA78D362257532000E22DFC /* FriendCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendCollectionViewController.swift; sourceTree = "<group>"; };
@@ -51,6 +53,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8E12EE11225F746100654BC7 /* Prototypes */ = {
+			isa = PBXGroup;
+			children = (
+				8E12EE0D225F580E00654BC7 /* FriendsTableViewCell.swift */,
+				8E12EE0F225F585C00654BC7 /* GroupsTableViewCell.swift */,
+				8E12EE12225F748100654BC7 /* FriendCollectionViewCell.swift */,
+			);
+			name = Prototypes;
+			sourceTree = "<group>";
+		};
 		8E84DD8B225F440100FBED66 /* Models */ = {
 			isa = PBXGroup;
 			children = (
@@ -98,8 +110,7 @@
 				8EA78D3A2257543B00E22DFC /* FriendsListTableViewController.swift */,
 				8EA78D3C2257546D00E22DFC /* CurGroupsListTableViewController.swift */,
 				8EA78D422257E49200E22DFC /* AllGroupsListTableViewController.swift */,
-				8E12EE0D225F580E00654BC7 /* FriendsTableViewCell.swift */,
-				8E12EE0F225F585C00654BC7 /* GroupsTableViewCell.swift */,
+				8E12EE11225F746100654BC7 /* Prototypes */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -177,6 +188,7 @@
 			files = (
 				8E12EE0E225F580E00654BC7 /* FriendsTableViewCell.swift in Sources */,
 				8EA78D372257532000E22DFC /* FriendCollectionViewController.swift in Sources */,
+				8E12EE13225F748100654BC7 /* FriendCollectionViewCell.swift in Sources */,
 				8E84DD88225F43E400FBED66 /* friendsModel.swift in Sources */,
 				8EA78D3D2257546D00E22DFC /* CurGroupsListTableViewController.swift in Sources */,
 				8EA78D3B2257543B00E22DFC /* FriendsListTableViewController.swift in Sources */,

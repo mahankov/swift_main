@@ -8,6 +8,7 @@
 
 import Foundation
 
-struct Friends {
-    
+struct Friend {
+    let userName: String
+    let userPicCircle: String
 }
