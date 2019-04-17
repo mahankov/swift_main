@@ -10,8 +10,12 @@ import UIKit
 
 class FriendCollectionViewController: UICollectionViewController {
     
+    public var username = ""
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        title = username
     }
     
     override func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
@@ -19,8 +23,8 @@ class FriendCollectionViewController: UICollectionViewController {
     }
 
     override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: FriendCollectionViewCell.reuseId, for: indexPath) as? FriendCollectionViewCell else { fatalError("Cell can not be dequeued") }
-    
+        guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: FriendCollectionViewCell.reuseId, for: indexPath) as? FriendCollectionViewCell else { fatalError() }
+
         return cell
     }
 

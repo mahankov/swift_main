@@ -10,8 +10,10 @@ import UIKit
 
 class FriendCollectionViewCell: UICollectionViewCell {
     
-    static let reuseId = "FriendCell"
+    static let reuseId = "FriendCollectionCell"
     
-    @IBOutlet var friendPic: UIImageView!
-    @IBOutlet var friendName: UILabel!
+    @IBOutlet weak var friendName: UILabel!
+    @IBOutlet weak var friendPic: AvatarView!
+    //@IBOutlet var text: String!
+    
 }

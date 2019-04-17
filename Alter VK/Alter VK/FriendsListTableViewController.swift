@@ -10,14 +10,14 @@ import UIKit
 
 class FriendsListTableViewController: UITableViewController {
     
-    private let friends: [Friend] = [
-        Friend(userName: "Нина Нинова", userPicCircle: "user1"),
-        Friend(userName: "Марина Маринина", userPicCircle: "user2"),
-        Friend(userName: "Михаил Михайлов", userPicCircle: "user3"),
-        Friend(userName: "Кристина Кристинина", userPicCircle: "user4"),
-        Friend(userName: "Александра Александрова", userPicCircle: "user5"),
-        Friend(userName: "Юрий Юрьев", userPicCircle: "user6"),
-        Friend(userName: "Борис Борисов", userPicCircle: "user7"),
+    private let users: [User] = [
+        User(ID: 1, userName: "Нина Нинова", userPic: "user1"),
+        User(ID: 2, userName: "Михаил Михайлов", userPic: "user2"),
+        User(ID: 3, userName: "Николай Николаев", userPic: "user3"),
+        User(ID: 4, userName: "Кристина Кристинина", userPic: "user4"),
+        User(ID: 5, userName: "Александра Александрова", userPic: "user5"),
+        User(ID: 6, userName: "Юрий Юрьев", userPic: "user6"),
+        User(ID: 7, userName: "Алина Алинина", userPic: "user7"),
     ]
 
     override func viewDidLoad() {
@@ -25,16 +25,24 @@ class FriendsListTableViewController: UITableViewController {
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return friends.count
+        return users.count
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         guard let cell = tableView.dequeueReusableCell(withIdentifier: FriendsTableViewCell.reuseId, for: indexPath) as? FriendsTableViewCell else { fatalError("Cell can not be dequeued") }
         
-        cell.friendName.text = friends[indexPath.row].userName
-        cell.friendPicCircle.image = UIImage.init(named: friends[indexPath.row].userPicCircle)
-        
+        cell.friendName.text = users[indexPath.row].userName
+        cell.friendPic.avatarImage = UIImage(named: users[indexPath.row].userPic)!
         return cell
     }
-
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "showFriend",
+            let userPage = segue.destination as? FriendPageTableViewController,
+            let indexPath = tableView.indexPathForSelectedRow {
+            let friendID = users[indexPath.row].ID
+            userPage.userID = friendID
+        }
+    }
+    
 }

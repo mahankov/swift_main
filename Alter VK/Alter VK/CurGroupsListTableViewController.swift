@@ -11,11 +11,11 @@ import UIKit
 class CurGroupsListTableViewController: UITableViewController {
 
     public var groups: [Group] = [
-        Group(groupName: "Команда ВКонтакте", groupPicCircle: "group2"),
-        Group(groupName: "КиноКайф - Лучшие фильмы", groupPicCircle: "group3"),
-        Group(groupName: "Новая Музыка 2019 | Новинки", groupPicCircle: "group5"),
-        Group(groupName: "Киномания | Новинки 2019", groupPicCircle: "group6"),
-        Group(groupName: "MDK", groupPicCircle: "group7"),
+        Group(ID: 1, groupName: "Команда ВКонтакте", groupPic: "group2"),
+        Group(ID: 2, groupName: "КиноКайф - Лучшие фильмы", groupPic: "group3"),
+        Group(ID: 3, groupName: "Новая Музыка 2019 | Новинки", groupPic: "group5"),
+        Group(ID: 4, groupName: "Киномания | Новинки 2019", groupPic: "group6"),
+        Group(ID: 5, groupName: "MDK", groupPic: "group7"),
     ]
     
     override func viewDidLoad() {
@@ -32,7 +32,7 @@ class CurGroupsListTableViewController: UITableViewController {
         guard let cell = tableView.dequeueReusableCell(withIdentifier: GroupsTableViewCell.reuseId, for: indexPath) as? GroupsTableViewCell else { fatalError("Cell can not be dequeued") }
 
         cell.groupName.text = groups[indexPath.row].groupName
-        cell.groupPicCircle.image = UIImage.init(named: groups[indexPath.row].groupPicCircle)
+        cell.groupPic.avatarImage = UIImage(named: groups[indexPath.row].groupPic)!
 
         return cell
     }
@@ -46,16 +46,20 @@ class CurGroupsListTableViewController: UITableViewController {
     
     @IBAction func addGroup(segue: UIStoryboardSegue) {
         if let allGroupsList = segue.source as? AllGroupsListTableViewController,
-            let indexPath = allGroupsList.tableView.indexPathForSelectedRow {
-            let newGroup = allGroupsList.groups[indexPath.row]
+        let indexPath = allGroupsList.tableView.indexPathForSelectedRow {
             
-            guard groups.contains(where: { (group) -> Bool in
-                return group.groupName != newGroup.groupName
-            }) else { return }
+                let newGroup = allGroupsList.groups[indexPath.row]
             
-            groups.append(newGroup)
-            let newIndexPath = IndexPath(item: groups.count - 1, section: 0)
-            tableView.insertRows(at: [newIndexPath], with: .automatic)        }
+                guard !groups.contains(where: { (group) -> Bool in
+                    return group.ID == newGroup.ID
+                }) else { return }
+            
+                groups.append(newGroup)
+                let newIndexPath = IndexPath(item: groups.count - 1, section: 0)
+                tableView.insertRows(at: [newIndexPath], with: .automatic)
+            
+        }
+        
     }
     
     /* Will be use after creating view for group

@@ -11,13 +11,13 @@ import UIKit
 class AllGroupsListTableViewController: UITableViewController {
 
     public var groups: [Group] = [
-        Group(groupName: "ЁП", groupPicCircle: "group1"),
-        Group(groupName: "Команда ВКонтакте", groupPicCircle: "group2"),
-        Group(groupName: "КиноКайф - Лучшие фильмы", groupPicCircle: "group3"),
-        Group(groupName: "Смешно до слез", groupPicCircle: "group4"),
-        Group(groupName: "Новая Музыка 2019 | Новинки", groupPicCircle: "group5"),
-        Group(groupName: "Киномания | Новинки 2019", groupPicCircle: "group6"),
-        Group(groupName: "MDK", groupPicCircle: "group7"),
+        Group(ID: 1, groupName: "Команда ВКонтакте", groupPic: "group2"),
+        Group(ID: 2, groupName: "КиноКайф - Лучшие фильмы", groupPic: "group3"),
+        Group(ID: 3, groupName: "Новая Музыка 2019 | Новинки", groupPic: "group5"),
+        Group(ID: 4, groupName: "Киномания | Новинки 2019", groupPic: "group6"),
+        Group(ID: 5, groupName: "MDK", groupPic: "group7"),
+        Group(ID: 6, groupName: "Смешно до слез", groupPic: "group4"),
+        Group(ID: 7, groupName: "ЁП", groupPic: "group1"),
     ]
     
     override func viewDidLoad() {
@@ -32,7 +32,7 @@ class AllGroupsListTableViewController: UITableViewController {
         guard let cell = tableView.dequeueReusableCell(withIdentifier: GroupsTableViewCell.reuseId, for: indexPath) as? GroupsTableViewCell else { fatalError("Cell can not be dequeued") }
         
         cell.groupName.text = groups[indexPath.row].groupName
-        cell.groupPicCircle.image = UIImage.init(named: groups[indexPath.row].groupPicCircle)
+        cell.groupPic.avatarImage = UIImage(named: groups[indexPath.row].groupPic)!
         
         return cell
     }
