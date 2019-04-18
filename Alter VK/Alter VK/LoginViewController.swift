@@ -1,15 +1,15 @@
 //
-//  ViewController.swift
+//  LoginViewController.swift
 //  Alter VK
 //
-//  Created by Anton Makhankov on 02/04/2019.
+//  Created by Anton Makhankov on 05/04/2019.
 //  Copyright © 2019 Anton Makhankov. All rights reserved.
 //
 
 import UIKit
 
-class ViewController: UIViewController {
-
+class LoginViewController: UIViewController {
+    
     @IBOutlet weak var scrollView: UIScrollView!
     @IBOutlet weak var username: UITextField!
     @IBOutlet weak var userpassword: UITextField!
@@ -44,7 +44,7 @@ class ViewController: UIViewController {
         scrollView?.contentInset = contentInsets
         scrollView?.scrollIndicatorInsets = contentInsets
     }
-
+    
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
@@ -54,7 +54,7 @@ class ViewController: UIViewController {
         // Второе -- когда она пропадает
         NotificationCenter.default.addObserver(self, selector: #selector(self.keyboardWillBeHidden(notification:)), name: UIResponder.keyboardWillHideNotification, object: nil)
     }
-
+    
     
     override func viewWillDisappear(_ animated: Bool) {
         super.viewWillDisappear(animated)
@@ -62,20 +62,45 @@ class ViewController: UIViewController {
         NotificationCenter.default.removeObserver(self, name: UIResponder.keyboardWillShowNotification, object: nil)
         NotificationCenter.default.removeObserver(self, name: UIResponder.keyboardWillHideNotification, object: nil)
     }
-
+    
     @objc func hideKeyboard() {
         self.scrollView?.endEditing(true)
     }
+    
 
-    @IBAction func loginButton(_ sender: Any) {
+    override func shouldPerformSegue(withIdentifier identifier: String, sender: Any?) -> Bool {
+        // Проверяем данные
+        let checkResult = checkUserData()
+        
+        // Если данные неверны, покажем ошибку
+        if !checkResult {
+            showLoginError()
+        }
+        
+        // Вернем результат
+        return checkResult
+    }
+    
+    private func checkUserData() -> Bool {
         let login = username.text!
         let password = userpassword.text!
         
-        if login == "admin" && password == "123456" {
-            print("успешная авторизация")
+        if login == "" && password == "" {
+            return true
         } else {
-            print("неуспешная авторизация")
+            return false
         }
+    }
+    
+    private func showLoginError() {
+        // Создаем контроллер
+        let alter = UIAlertController(title: "Authorization failed", message: "Your username or password is incorrect", preferredStyle: .alert)
+        // Создаем кнопку для UIAlertController
+        let action = UIAlertAction(title: "Ok", style: .cancel, handler: nil)
+        // Добавляем кнопку на UIAlertController
+        alter.addAction(action)
+        // Показываем UIAlertController
+        present(alter, animated: true, completion: nil)
     }
     
 }
