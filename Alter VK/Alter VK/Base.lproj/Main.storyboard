@@ -130,10 +130,11 @@
         <scene sceneID="4WJ-9u-GjU">
             <objects>
                 <tabBarController id="y1s-rU-e3T" sceneMemberID="viewController">
-                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="F4H-eO-ie9">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" itemPositioning="centered" id="F4H-eO-ie9">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="selectedImageTintColor" cocoaTouchSystemColor="viewFlipsideBackgroundColor"/>
                     </tabBar>
                     <connections>
                         <segue destination="cVs-xZ-IYS" kind="relationship" relationship="viewControllers" id="xgf-8X-0d8"/>
@@ -145,7 +146,7 @@
             </objects>
             <point key="canvasLocation" x="839" y="-381"/>
         </scene>
-        <!--Friends List Table View Controller-->
+        <!--My friends-->
         <scene sceneID="GLd-W7-XfK">
             <objects>
                 <tableViewController id="SNs-C8-RVf" customClass="FriendsListTableViewController" customModule="Alter_VK" customModuleProvider="target" sceneMemberID="viewController">
@@ -197,7 +198,7 @@
                             <outlet property="delegate" destination="SNs-C8-RVf" id="RfL-Jj-VIZ"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" id="czI-pP-fKa"/>
+                    <navigationItem key="navigationItem" title="My friends" id="czI-pP-fKa"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="MVa-Zo-aJu" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -252,7 +253,7 @@
             </objects>
             <point key="canvasLocation" x="4343.4782608695659" y="-747.32142857142856"/>
         </scene>
-        <!--Friend Page Table View Controller-->
+        <!--Title-->
         <scene sceneID="ZZZ-b5-4BW">
             <objects>
                 <tableViewController id="lsZ-kl-e6L" customClass="FriendPageTableViewController" customModule="Alter_VK" customModuleProvider="target" sceneMemberID="viewController">
@@ -353,6 +354,7 @@
                                     <outlet property="authorName" destination="9G5-H7-DTS" id="oxG-M4-6p1"/>
                                     <outlet property="authorPic" destination="LiT-CI-1jo" id="dJK-rR-Hvd"/>
                                     <outlet property="postDate" destination="Mx8-35-hPa" id="Te3-vJ-Udz"/>
+                                    <outlet property="postLikesCounter" destination="ycX-sh-c5K" id="Xwj-BS-Rja"/>
                                     <outlet property="postText" destination="jEL-Sd-c9i" id="fU3-eU-wVN"/>
                                 </connections>
                             </tableViewCell>
@@ -362,12 +364,13 @@
                             <outlet property="delegate" destination="lsZ-kl-e6L" id="wRi-aS-t9F"/>
                         </connections>
                     </tableView>
+                    <navigationItem key="navigationItem" title="Title" id="W5B-ev-6J2"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="lVy-C3-Wrk" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="3511.594202898551" y="-747.32142857142856"/>
         </scene>
-        <!--Cur Groups List Table View Controller-->
+        <!--My groups-->
         <scene sceneID="PJ8-5a-S0B">
             <objects>
                 <tableViewController id="l1J-l3-q99" customClass="CurGroupsListTableViewController" customModule="Alter_VK" customModuleProvider="target" sceneMemberID="viewController">
@@ -418,8 +421,8 @@
                             <outlet property="delegate" destination="l1J-l3-q99" id="Ru6-R3-OaB"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" id="yNQ-f1-RKf">
-                        <barButtonItem key="rightBarButtonItem" title="+" id="McT-EU-29D">
+                    <navigationItem key="navigationItem" title="My groups" id="yNQ-f1-RKf">
+                        <barButtonItem key="rightBarButtonItem" title="Add" id="McT-EU-29D">
                             <connections>
                                 <segue destination="fiG-Tj-3qA" kind="show" id="gUg-ba-PvH"/>
                             </connections>
@@ -430,7 +433,7 @@
             </objects>
             <point key="canvasLocation" x="2662.3188405797105" y="-78.348214285714278"/>
         </scene>
-        <!--All Groups List Table View Controller-->
+        <!--All groups-->
         <scene sceneID="27x-8y-vWz">
             <objects>
                 <tableViewController id="fiG-Tj-3qA" customClass="AllGroupsListTableViewController" customModule="Alter_VK" customModuleProvider="target" sceneMemberID="viewController">
@@ -482,6 +485,7 @@
                             <outlet property="delegate" destination="fiG-Tj-3qA" id="e8j-sf-zWX"/>
                         </connections>
                     </tableView>
+                    <navigationItem key="navigationItem" title="All groups" id="71Y-za-Tas"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="sa1-mG-ifa" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <exit id="0te-Xt-0Gy" userLabel="Exit" sceneMemberID="exit"/>
@@ -546,7 +550,7 @@
             </objects>
             <point key="canvasLocation" x="1754" y="615"/>
         </scene>
-        <!--View Controller-->
+        <!--Me-->
         <scene sceneID="g8U-J6-k8y">
             <objects>
                 <viewController id="GBg-YP-iS6" sceneMemberID="viewController">
@@ -556,11 +560,16 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="5D2-Tp-KHz"/>
                     </view>
-                    <navigationItem key="navigationItem" id="vUU-Xy-NlI">
-                        <barButtonItem key="rightBarButtonItem" title="Log Out" id="iru-if-6jA"/>
+                    <navigationItem key="navigationItem" title="Me" id="vUU-Xy-NlI">
+                        <barButtonItem key="rightBarButtonItem" title="Log Out" id="iru-if-6jA">
+                            <connections>
+                                <segue destination="06u-8y-3DQ" kind="unwind" unwindAction="logOutWithSegue:" id="mw9-W1-lZ7"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Qyv-lc-Rl8" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="06u-8y-3DQ" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="2665" y="615"/>
         </scene>

@@ -16,5 +16,5 @@ class PostTableViewCell: UITableViewCell {
     @IBOutlet weak var postText: UILabel!
     @IBOutlet weak var authorName: UILabel!
     @IBOutlet weak var postDate: UILabel!
-    @IBOutlet weak var postLikesControl: UIView!
+    @IBOutlet weak var postLikesCounter: UILabel!
 }

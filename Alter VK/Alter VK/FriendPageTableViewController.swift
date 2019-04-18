@@ -50,6 +50,7 @@ class FriendPageTableViewController: UITableViewController {
         cell.authorPic.avatarImage = UIImage(named: user[0].userPic)!
         cell.postText.text = userPosts[indexPath.row].text
         cell.postDate.text = userPosts[indexPath.row].postDate
+        cell.postLikesCounter.text = String(userPosts[indexPath.row].likeCount)
         
         return cell
     }
