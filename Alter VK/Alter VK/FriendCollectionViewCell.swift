@@ -1,5 +1,5 @@
 //
-//  FriendsTableViewCell.swift
+//  FriendCollectionViewCell.swift
 //  Alter VK
 //
 //  Created by Anton Makhankov on 11/04/2019.
@@ -8,11 +8,12 @@
 
 import UIKit
 
-class FriendsTableViewCell: UITableViewCell {
-
-    static let reuseId = "FriendsListCell";
+class FriendCollectionViewCell: UICollectionViewCell {
+    
+    static let reuseId = "FriendCollectionCell"
     
     @IBOutlet weak var friendName: UILabel!
     @IBOutlet weak var friendPic: AvatarView!
+    //@IBOutlet var text: String!
     
 }

@@ -103,5 +103,10 @@ class LoginViewController: UIViewController {
         present(alter, animated: true, completion: nil)
     }
     
+    
+    @IBAction func logOut(segue: UIStoryboardSegue) {
+        
+    }
+    
 }
 

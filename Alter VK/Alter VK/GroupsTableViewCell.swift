@@ -12,13 +12,7 @@ class GroupsTableViewCell: UITableViewCell {
 
     static let reuseId = "GroupsListCell";
     
-    
     @IBOutlet weak var groupName: UILabel!
-    @IBOutlet weak var groupPicCircle: UIImageView!
-    
-    override func awakeFromNib() {
-        super.awakeFromNib()
-        // Initialization code
-    }
+    @IBOutlet weak var groupPic: AvatarView!
 
 }

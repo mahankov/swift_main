@@ -9,77 +9,40 @@
 import UIKit
 
 class FriendsListTableViewController: UITableViewController {
+    
+    private let users: [User] = [
+        User(ID: 1, userName: "Нина Нинова", userPic: "user1"),
+        User(ID: 2, userName: "Михаил Михайлов", userPic: "user2"),
+        User(ID: 3, userName: "Николай Николаев", userPic: "user3"),
+        User(ID: 4, userName: "Кристина Кристинина", userPic: "user4"),
+        User(ID: 5, userName: "Александра Александрова", userPic: "user5"),
+        User(ID: 6, userName: "Юрий Юрьев", userPic: "user6"),
+        User(ID: 7, userName: "Алина Алинина", userPic: "user7"),
+    ]
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Uncomment the following line to preserve selection between presentations
-        // self.clearsSelectionOnViewWillAppear = false
-
-        // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-        // self.navigationItem.rightBarButtonItem = self.editButtonItem
     }
-
-    // MARK: - Table view data source
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        // #warning Incomplete implementation, return the number of rows
-        return 10
+        return users.count
     }
-    
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         guard let cell = tableView.dequeueReusableCell(withIdentifier: FriendsTableViewCell.reuseId, for: indexPath) as? FriendsTableViewCell else { fatalError("Cell can not be dequeued") }
         
-        cell.friendName.text = "My friend name"
-        cell.friendPicCircle.image = UIImage.init(named: "user1")
-        
+        cell.friendName.text = users[indexPath.row].userName
+        cell.friendPic.avatarImage = UIImage(named: users[indexPath.row].userPic)!
         return cell
     }
-
-    /*
-    // Override to support conditional editing of the table view.
-    override func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
-        // Return false if you do not want the specified item to be editable.
-        return true
-    }
-    */
-
-    /*
-    // Override to support editing the table view.
-    override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
-        if editingStyle == .delete {
-            // Delete the row from the data source
-            tableView.deleteRows(at: [indexPath], with: .fade)
-        } else if editingStyle == .insert {
-            // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
-        }    
-    }
-    */
-
-    /*
-    // Override to support rearranging the table view.
-    override func tableView(_ tableView: UITableView, moveRowAt fromIndexPath: IndexPath, to: IndexPath) {
-
-    }
-    */
-
-    /*
-    // Override to support conditional rearranging of the table view.
-    override func tableView(_ tableView: UITableView, canMoveRowAt indexPath: IndexPath) -> Bool {
-        // Return false if you do not want the item to be re-orderable.
-        return true
-    }
-    */
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
+    
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+        if segue.identifier == "showFriend",
+            let userPage = segue.destination as? FriendPageTableViewController,
+            let indexPath = tableView.indexPathForSelectedRow {
+            let friendID = users[indexPath.row].ID
+            userPage.userID = friendID
+        }
     }
-    */
-
+    
 }

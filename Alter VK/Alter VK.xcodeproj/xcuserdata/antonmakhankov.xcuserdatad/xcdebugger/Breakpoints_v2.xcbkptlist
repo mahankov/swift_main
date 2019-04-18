@@ -1,0 +1,392 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Alter VK/AvatarView.swift"
+            timestampString = "577031569.758492"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "67"
+            endingLineNumber = "67"
+            landmarkName = "AvatarView"
+            landmarkType = "3">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Alter_VK.AvatarView.__allocating_init(image: Swift.Optional&lt;__C.UIImage&gt;) -&gt; Alter_VK.AvatarView"
+                  moduleName = "Alter VK"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/antonmakhankov/Documents/Swift/swift_main/Alter%20VK/Alter%20VK/AvatarView.swift"
+                  timestampString = "577031536.445412"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "12">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Alter_VK.AvatarView.init(image: Swift.Optional&lt;__C.UIImage&gt;) -&gt; Alter_VK.AvatarView"
+                  moduleName = "Alter VK"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/antonmakhankov/Documents/Swift/swift_main/Alter%20VK/Alter%20VK/AvatarView.swift"
+                  timestampString = "577031536.460924"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "68"
+                  endingLineNumber = "68"
+                  offsetFromSymbolStart = "110">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Alter_VK.AvatarView.__allocating_init(image: Swift.Optional&lt;__C.UIImage&gt;, highlightedImage: Swift.Optional&lt;__C.UIImage&gt;) -&gt; Alter_VK.AvatarView"
+                  moduleName = "Alter VK"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/antonmakhankov/Documents/Swift/swift_main/Alter%20VK/Alter%20VK/AvatarView.swift"
+                  timestampString = "577031536.4661421"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "12">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Alter_VK.AvatarView.init(image: Swift.Optional&lt;__C.UIImage&gt;, highlightedImage: Swift.Optional&lt;__C.UIImage&gt;) -&gt; Alter_VK.AvatarView"
+                  moduleName = "Alter VK"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/antonmakhankov/Documents/Swift/swift_main/Alter%20VK/Alter%20VK/AvatarView.swift"
+                  timestampString = "577031536.469695"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "68"
+                  endingLineNumber = "68"
+                  offsetFromSymbolStart = "153">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Alter_VK.AvatarView.__allocating_init(frame: __C.CGRect) -&gt; Alter_VK.AvatarView"
+                  moduleName = "Alter VK"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/antonmakhankov/Documents/Swift/swift_main/Alter%20VK/Alter%20VK/AvatarView.swift"
+                  timestampString = "577031536.477066"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "12">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Alter_VK.AvatarView.init(frame: __C.CGRect) -&gt; Alter_VK.AvatarView"
+                  moduleName = "Alter VK"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/antonmakhankov/Documents/Swift/swift_main/Alter%20VK/Alter%20VK/AvatarView.swift"
+                  timestampString = "577031536.480075"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "68"
+                  endingLineNumber = "68"
+                  offsetFromSymbolStart = "197">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Alter_VK.AvatarView.__allocating_init(coder: __C.NSCoder) -&gt; Swift.Optional&lt;Alter_VK.AvatarView&gt;"
+                  moduleName = "Alter VK"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/antonmakhankov/Documents/Swift/swift_main/Alter%20VK/Alter%20VK/AvatarView.swift"
+                  timestampString = "577031536.489915"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "12">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Alter_VK.AvatarView.init(coder: __C.NSCoder) -&gt; Swift.Optional&lt;Alter_VK.AvatarView&gt;"
+                  moduleName = "Alter VK"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/antonmakhankov/Documents/Swift/swift_main/Alter%20VK/Alter%20VK/AvatarView.swift"
+                  timestampString = "577031536.496129"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "68"
+                  endingLineNumber = "68"
+                  offsetFromSymbolStart = "110">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Alter_VK.AvatarView.__deallocating_deinit"
+                  moduleName = "Alter VK"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/antonmakhankov/Documents/Swift/swift_main/Alter%20VK/Alter%20VK/AvatarView.swift"
+                  timestampString = "577031536.500263"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "16">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Alter VK/FriendsListTableViewController.swift"
+            timestampString = "577110355.651019"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "31"
+            endingLineNumber = "31"
+            landmarkName = "tableView(_:cellForRowAt:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Alter VK/FriendsTableViewCell.swift"
+            timestampString = "577108253.042533"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "11"
+            endingLineNumber = "11"
+            landmarkName = "FriendsTableViewCell"
+            landmarkType = "3">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Alter_VK.FriendsTableViewCell.__allocating_init(style: __C.UITableViewCellStyle, reuseIdentifier: Swift.Optional&lt;Swift.String&gt;) -&gt; Alter_VK.FriendsTableViewCell"
+                  moduleName = "Alter VK"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/antonmakhankov/Documents/Swift/swift_main/Alter%20VK/Alter%20VK/FriendsTableViewCell.swift"
+                  timestampString = "577031536.524076"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "12">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Alter_VK.FriendsTableViewCell.init(style: __C.UITableViewCellStyle, reuseIdentifier: Swift.Optional&lt;Swift.String&gt;) -&gt; Alter_VK.FriendsTableViewCell"
+                  moduleName = "Alter VK"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/antonmakhankov/Documents/Swift/swift_main/Alter%20VK/Alter%20VK/FriendsTableViewCell.swift"
+                  timestampString = "577031536.5272419"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "15"
+                  endingLineNumber = "15"
+                  offsetFromSymbolStart = "199">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Alter_VK.FriendsTableViewCell.__allocating_init(coder: __C.NSCoder) -&gt; Swift.Optional&lt;Alter_VK.FriendsTableViewCell&gt;"
+                  moduleName = "Alter VK"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/antonmakhankov/Documents/Swift/swift_main/Alter%20VK/Alter%20VK/FriendsTableViewCell.swift"
+                  timestampString = "577031536.5327049"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "12">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Alter_VK.FriendsTableViewCell.init(coder: __C.NSCoder) -&gt; Swift.Optional&lt;Alter_VK.FriendsTableViewCell&gt;"
+                  moduleName = "Alter VK"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/antonmakhankov/Documents/Swift/swift_main/Alter%20VK/Alter%20VK/FriendsTableViewCell.swift"
+                  timestampString = "577031536.535679"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "15"
+                  endingLineNumber = "15"
+                  offsetFromSymbolStart = "107">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Alter_VK.FriendsTableViewCell.__deallocating_deinit"
+                  moduleName = "Alter VK"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/antonmakhankov/Documents/Swift/swift_main/Alter%20VK/Alter%20VK/FriendsTableViewCell.swift"
+                  timestampString = "577031536.538178"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "16">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Alter VK/FriendCollectionViewController.swift"
+            timestampString = "577187041.686609"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "11"
+            endingLineNumber = "11"
+            landmarkName = "FriendCollectionViewController"
+            landmarkType = "3">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Alter_VK.FriendCollectionViewController.__allocating_init(collectionViewLayout: __C.UICollectionViewLayout) -&gt; Alter_VK.FriendCollectionViewController"
+                  moduleName = "Alter VK"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/antonmakhankov/Documents/Swift/swift_main/Alter%20VK/Alter%20VK/FriendCollectionViewController.swift"
+                  timestampString = "577031536.549608"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "12">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Alter_VK.FriendCollectionViewController.init(collectionViewLayout: __C.UICollectionViewLayout) -&gt; Alter_VK.FriendCollectionViewController"
+                  moduleName = "Alter VK"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/antonmakhankov/Documents/Swift/swift_main/Alter%20VK/Alter%20VK/FriendCollectionViewController.swift"
+                  timestampString = "577031536.55238"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "13"
+                  endingLineNumber = "13"
+                  offsetFromSymbolStart = "37">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Alter_VK.FriendCollectionViewController.__allocating_init(nibName: Swift.Optional&lt;Swift.String&gt;, bundle: Swift.Optional&lt;__C.NSBundle&gt;) -&gt; Alter_VK.FriendCollectionViewController"
+                  moduleName = "Alter VK"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/antonmakhankov/Documents/Swift/swift_main/Alter%20VK/Alter%20VK/FriendCollectionViewController.swift"
+                  timestampString = "577031536.554931"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "12">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Alter_VK.FriendCollectionViewController.init(nibName: Swift.Optional&lt;Swift.String&gt;, bundle: Swift.Optional&lt;__C.NSBundle&gt;) -&gt; Alter_VK.FriendCollectionViewController"
+                  moduleName = "Alter VK"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/antonmakhankov/Documents/Swift/swift_main/Alter%20VK/Alter%20VK/FriendCollectionViewController.swift"
+                  timestampString = "577031536.5575579"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "13"
+                  endingLineNumber = "13"
+                  offsetFromSymbolStart = "156">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Alter_VK.FriendCollectionViewController.__allocating_init(coder: __C.NSCoder) -&gt; Swift.Optional&lt;Alter_VK.FriendCollectionViewController&gt;"
+                  moduleName = "Alter VK"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/antonmakhankov/Documents/Swift/swift_main/Alter%20VK/Alter%20VK/FriendCollectionViewController.swift"
+                  timestampString = "577031536.560565"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "12">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Alter_VK.FriendCollectionViewController.init(coder: __C.NSCoder) -&gt; Swift.Optional&lt;Alter_VK.FriendCollectionViewController&gt;"
+                  moduleName = "Alter VK"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/antonmakhankov/Documents/Swift/swift_main/Alter%20VK/Alter%20VK/FriendCollectionViewController.swift"
+                  timestampString = "577031536.563233"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "13"
+                  endingLineNumber = "13"
+                  offsetFromSymbolStart = "92">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Alter_VK.FriendCollectionViewController.__deallocating_deinit"
+                  moduleName = "Alter VK"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/antonmakhankov/Documents/Swift/swift_main/Alter%20VK/Alter%20VK/FriendCollectionViewController.swift"
+                  timestampString = "577031536.56548"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "16">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>
