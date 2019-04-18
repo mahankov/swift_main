@@ -49,7 +49,7 @@ class FriendPageTableViewController: UITableViewController {
         cell.authorName.text = user[0].userName
         cell.authorPic.avatarImage = UIImage(named: user[0].userPic)!
         cell.postText.text = userPosts[indexPath.row].text
-        cell.postDate.text = userPosts[indexPath.row].postDate        
+        cell.postDate.text = userPosts[indexPath.row].postDate
         
         return cell
     }

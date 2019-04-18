@@ -13,7 +13,7 @@
         <!--Login View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="LoginViewController" customModule="Alter_VK" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController hidesBottomBarWhenPushed="YES" id="BYZ-38-t0r" customClass="LoginViewController" customModule="Alter_VK" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -115,6 +115,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <nil key="simulatedBottomBarMetrics"/>
                     <connections>
                         <outlet property="scrollView" destination="U0G-mu-dOG" id="Q1H-CV-Rm5"/>
                         <outlet property="username" destination="p0i-j9-1Pj" id="rGD-je-Zfo"/>
@@ -137,6 +138,7 @@
                     <connections>
                         <segue destination="cVs-xZ-IYS" kind="relationship" relationship="viewControllers" id="xgf-8X-0d8"/>
                         <segue destination="ov3-Cx-Gdo" kind="relationship" relationship="viewControllers" id="Qsh-2P-cHg"/>
+                        <segue destination="QOz-Hn-Fx0" kind="relationship" relationship="viewControllers" id="BWc-az-EpU"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zut-UB-gur" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -280,7 +282,7 @@
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="top" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="none" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jEL-Sd-c9i">
-                                            <rect key="frame" x="10" y="65" width="394" height="229.5"/>
+                                            <rect key="frame" x="10" y="65" width="394" height="239.5"/>
                                             <string key="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi dignissim lacus in lacus ultrices, venenatis dictum odio eleifend. Aliquam sed enim porta, consectetur magna semper, fringilla diam. Quisque tincidunt rhoncus nisi ac aliquet. Mauris vel neque vulputate, lacinia nisi et, posuere velit. Donec sit amet nibh aliquet, condimentum diam vel, egestas magna. Nulla facilisi. Duis mauris neque, porttitor ac sem non, efficitur finibus tortor. Etiam vitae sem sit amet tortor condimentum mollis in cursus turpis. Aenean libero turpis, sodales nec ultricies sit amet, commodo vel purus.</string>
                                             <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                             <nil key="textColor"/>
@@ -337,7 +339,7 @@
                                         <constraint firstItem="9G5-H7-DTS" firstAttribute="leading" secondItem="LiT-CI-1jo" secondAttribute="trailing" constant="15" id="EPx-76-ubS"/>
                                         <constraint firstAttribute="trailing" secondItem="Mx8-35-hPa" secondAttribute="trailing" constant="10" id="OWJ-Cc-fNP"/>
                                         <constraint firstAttribute="trailing" secondItem="jEL-Sd-c9i" secondAttribute="trailing" constant="10" id="Pkq-0L-S4A"/>
-                                        <constraint firstItem="dig-hf-V4B" firstAttribute="top" secondItem="jEL-Sd-c9i" secondAttribute="bottom" constant="20" id="Ts8-iU-9cS"/>
+                                        <constraint firstItem="dig-hf-V4B" firstAttribute="top" secondItem="jEL-Sd-c9i" secondAttribute="bottom" constant="10" id="Ts8-iU-9cS"/>
                                         <constraint firstItem="jEL-Sd-c9i" firstAttribute="leading" secondItem="cot-Qm-OFO" secondAttribute="leading" constant="10" id="VXq-Kl-QKS"/>
                                         <constraint firstItem="dig-hf-V4B" firstAttribute="leading" secondItem="cot-Qm-OFO" secondAttribute="leading" constant="10" id="XsQ-Nq-9Bh"/>
                                         <constraint firstItem="LiT-CI-1jo" firstAttribute="top" secondItem="cot-Qm-OFO" secondAttribute="top" constant="10" id="gNC-DM-Rtz"/>
@@ -526,6 +528,41 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="o68-wM-fzr" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1753.6231884057972" y="-78.348214285714278"/>
+        </scene>
+        <!--Me-->
+        <scene sceneID="h9k-Ld-KKe">
+            <objects>
+                <navigationController id="QOz-Hn-Fx0" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Me" id="VwR-sw-9Ic"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="XY1-PO-1Gl">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="GBg-YP-iS6" kind="relationship" relationship="rootViewController" id="h65-UT-Qza"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Lu2-5V-UDR" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1754" y="615"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="g8U-J6-k8y">
+            <objects>
+                <viewController id="GBg-YP-iS6" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="6FP-Vp-yAi">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="5D2-Tp-KHz"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="vUU-Xy-NlI">
+                        <barButtonItem key="rightBarButtonItem" title="Log Out" id="iru-if-6jA"/>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Qyv-lc-Rl8" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2665" y="615"/>
         </scene>
     </scenes>
     <resources>
