@@ -14,4 +14,5 @@ struct Post {
     let text: String
     let likeCount: Int
     let postDate: String
+    let postImages: [String]
 }

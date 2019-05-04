@@ -17,4 +17,6 @@ class PostTableViewCell: UITableViewCell {
     @IBOutlet weak var authorName: UILabel!
     @IBOutlet weak var postDate: UILabel!
     @IBOutlet weak var postLikesCounter: UILabel!
+    @IBOutlet weak var postImage: UIImageView!
+    @IBOutlet weak var postImages: UIView!
 }
